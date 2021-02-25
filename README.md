@@ -2,6 +2,11 @@
 
 A template repo for Software Engineering projects at NYU Tandon.
 
+In order to build production, in the top level directory, run:
+
+`make prod`
+
+
 ## Requirements
 
 The requirements for a design project include:
