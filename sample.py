@@ -3,7 +3,7 @@ ERROR = 1
 
 
 def main():
-    print("Hello class!")
+    print("Hello class!")  # check if main even runs!
     return ERROR
 
 

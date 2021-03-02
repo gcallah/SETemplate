@@ -1,12 +1,14 @@
+PYLINT = flake8
 
 FORCE:
 
 tests: FORCE
-	nosetests --with-coverage --cover-package=.
+	$(PYLINT) *.py
+	nosetests --exe --with-coverage --verbose # --cover-package=SeniorDesignTemplate
 
 prod: tests
 	git commit -a
 	git push origin main
 
-%.py:
+%.py: FORCE
 	nosetests tests.test_$* --nocapture
