@@ -3,6 +3,7 @@ ERROR = 1
 
 
 def main():
+    print("Hello class!")
     return ERROR
 
 

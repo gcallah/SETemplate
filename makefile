@@ -7,3 +7,6 @@ tests: FORCE
 prod: tests
 	git commit -a
 	git push origin main
+
+%.py:
+	nosetests tests.test_$* --nocapture
