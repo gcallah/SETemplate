@@ -4,7 +4,7 @@ FORCE:
 
 tests: FORCE
 	$(PYLINT) *.py
-	nosetests --exe --with-coverage --verbose # --cover-package=SeniorDesignTemplate
+	nosetests --exe --with-coverage --verbose --cover-package=SETemplate
 
 prod: tests
 	git commit -a
